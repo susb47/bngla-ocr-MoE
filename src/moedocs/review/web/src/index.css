@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+/* CodeMirror tweaks */
+.cm-editor {
+  height: 100%;
+  font-size: 14px;
+}
+.cm-scroller {
+  overflow: auto !important;
+}
+
+/* Block highlight in PDF overlay */
+.block-overlay {
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.block-overlay.selected {
+  background-color: rgba(14, 165, 233, 0.25);
+  border-color: #0ea5e9;
+}
+.block-overlay.low-conf {
+  background-color: rgba(239, 68, 68, 0.18);
+  border-color: #ef4444;
+}
+.block-overlay:hover {
+  background-color: rgba(14, 165, 233, 0.15);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}

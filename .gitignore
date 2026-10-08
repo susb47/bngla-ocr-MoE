@@ -1,0 +1,32 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Environment
+.env
+*.local
+
+# Corpus (runtime data – large, regenerable)
+corpus/
+
+# Node / frontend
+src/moedocs/review/web/node_modules/
+src/moedocs/review/web/dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Logs / temp
+*.log
+tmp/
+temp/

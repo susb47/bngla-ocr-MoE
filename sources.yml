@@ -1,0 +1,30 @@
+# Agency sources for the acquire module
+# Each entry becomes a crawl target.
+
+agencies:
+  - id: moe
+    name: Ministry of Education
+    base_url: https://moedu.gov.bd
+    start_urls:
+      - https://moedu.gov.bd/site/view/notices
+      - https://moedu.gov.bd/site/view/circulars
+    cadence: daily          # how often to check for changes
+    volatility: semi        # stable | semi | volatile
+    allowed_extensions:
+      - .pdf
+      - .doc
+      - .docx
+    robots: respect         # respect | ignore
+
+  - id: dpe
+    name: Directorate of Primary Education
+    base_url: https://dpe.gov.bd
+    start_urls:
+      - https://dpe.gov.bd/site/view/notices
+    cadence: weekly
+    volatility: stable
+    allowed_extensions:
+      - .pdf
+    robots: respect
+
+  # Add more agencies here
